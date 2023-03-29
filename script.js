@@ -28,3 +28,8 @@ function letterCombinations(digits) {
       const letter = letters[i];
       backtrack(currentString + letter, nextDigits.slice(1));
     }
+  }
+
+  backtrack('', digits);
+  return result.sort();
+}
