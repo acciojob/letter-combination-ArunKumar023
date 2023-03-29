@@ -33,3 +33,4 @@ function letterCombinations(digits) {
   backtrack('', digits);
   return result.sort();
 }
+module.exports=letterCombinations;
